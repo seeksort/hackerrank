@@ -2,6 +2,7 @@
 
 # My Files
 /CodeSprints
+.eslintrc
 
 # Packages
 node_modules
