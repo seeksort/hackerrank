@@ -1,5 +1,10 @@
 // https://www.hackerrank.com/challenges/apple-and-orange
-// A house is between two trees, on the same axis. Given positions of the trees and house and fruit that falls from both trees, determine how many trees have fallen onto the house.
+/**
+* A house is between two trees, on the same axis. Given
+* positions of the trees and house and fruit that falls from
+* both trees, determine how many trees have fallen onto the
+* house.
+*/
 
 // House
 const s = 7;
@@ -23,28 +28,25 @@ Output (2 lines):
 # oranges that fell on the house
 */
 
-(function() {
-  function fruitPositions (treePosition, distances) {
-    let positions = [];
-    distances.forEach(dist => {
-      positions.push(treePosition + dist);
-    });
+(function () {
+  function fruitPositions(treePosition, distances) {
+    const positions = [];
+    distances.forEach(dist => positions.push(treePosition + dist));
     return positions;
   }
 
   const applePositions = fruitPositions(a, appleDists);
   const orangePositions = fruitPositions(b, orangeDists);
 
-  function fruitOnHouse (positions) {
+  function fruitOnHouse(positions) {
     let count = 0;
-    positions.forEach(position => {
+    positions.forEach((position) => {
       if (position >= s && position <= t) {
-        count++;
+        count += 1;
       }
     });
     return count;
   }
 
-  console.log(output = `${fruitOnHouse(applePositions)}\n${fruitOnHouse(orangePositions)}`);
-  
-})()
+  console.log(`${fruitOnHouse(applePositions)}\n${fruitOnHouse(orangePositions)}`);
+}());

@@ -1,0 +1,12 @@
+{
+    "extends": "airbnb-base",
+    "plugins": [
+        "import"
+    ],
+    "rules": {
+
+        // Testing code in terminal via Node
+        "no-console": "off"
+        
+    }
+}

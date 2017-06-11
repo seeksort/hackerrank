@@ -1,0 +1,25 @@
+{
+  "name": "hackerrank",
+  "version": "1.0.0",
+  "description": "My solutions to HackerRank exercises.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seeksort/hackerrank.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seeksort/hackerrank/issues"
+  },
+  "homepage": "https://github.com/seeksort/hackerrank#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0"
+  }
+}
