@@ -5,8 +5,8 @@
     ],
     "rules": {
 
-        // Testing code in terminal via Node
-        "no-console": "off"
+        "no-console": "off",
+        "func-names": 0
         
     }
 }
